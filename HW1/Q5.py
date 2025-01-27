@@ -1,4 +1,10 @@
 def is_leap_yr(yr:int) -> bool:
+    ''' Check input year number is leap year or not'''
+    
+    # A leap year meet 2 cases:  
+    #   1: can be divided by 4  and  NOT dividead by 100
+    #   2: can be divided by 400
+     
     if (yr % 4 == 0 and yr % 100 !=0) or (yr % 400 == 0):
         return True
     else:
